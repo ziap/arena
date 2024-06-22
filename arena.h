@@ -8,6 +8,9 @@ USAGE
   #define ARENA_ALLOC and ARENA_DEALLOC to avoid using malloc/free and create a
   custom backend for the allocator.
 
+TODO:
+  - Accept alignment as an argument not as a configuration
+
 LICENSE
   See end of file for license information.
 */
