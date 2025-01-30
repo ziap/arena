@@ -44,11 +44,11 @@ implement that with `ARENA_BACKEND_ALLOC` and `ARENA_BACKEND_DEALLOC`.
 
 Some macros that you can redefine to configure the library:
 
-| Macro             | Usage                                                      |
-| ----------------- | ---------------------------------------------------------- |
-| `ARENA_MEMCPY`    | Redefine if your platform can't use libc's `memcpy`        |
-| `ARENA_ALIGNMENT` | Customize the memory alignment. Default is `sizeof(void*)` |
-| `ARENA_MAX_SIZE`  | The maximum size of each chunk, should be page-aligned     |
+| Macro             | Usage                                                  |
+| ----------------- | ------------------------------------------------------ |
+| `ARENA_MEMCPY`    | Redefine if your platform can't use libc's `memcpy`    |
+| `ARENA_ALIGNMENT` | Customize the memory alignment. Default is `16`        |
+| `ARENA_MAX_SIZE`  | The maximum size of each chunk, should be page-aligned |
 
 
 ## License

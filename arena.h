@@ -68,7 +68,7 @@ static void *Arena_backend_resize(void *ptr, size_t old_size, size_t new_size) {
 #endif
 
 #ifndef ARENA_ALIGNMENT
-#define ARENA_ALIGNMENT (sizeof(void*))
+#define ARENA_ALIGNMENT 16
 #endif
 
 #define ARENA_ALIGN(p) (-(uintptr_t)((void*)p) & (ARENA_ALIGNMENT - 1))
